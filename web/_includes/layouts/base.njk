@@ -6,28 +6,22 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
       {# <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}"> #}
-    {% set css %}
-      {%      
-        include "https://bottleopener.com/Themes/Prisma/Content/CSS/styles.css"
-        include "https://bottleopener.com/Themes/Prisma/Content/CSS/mobile.css"
-        include "https://bottleopener.com/Themes/Prisma/Content/CSS/480.css"
-        include "https://bottleopener.com/Themes/Prisma/Content/CSS/768.css"
-        include "https://bottleopener.com/Themes/Prisma/Content/CSS/1024.css"
-        include "https://bottleopener.com/Themes/Prisma/Content/CSS/1280.css"
-        include "https://bottleopener.com/Plugins/SevenSpikes.Core/Styles/perfect-scrollbar.min.css"
-        include "https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.RichBlog/Themes/Prisma/Content/RichBlog.css"
-        include "https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.MegaMenu/Themes/Prisma/Content/MegaMenu.css"
-        include "https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.AjaxCart/Themes/Prisma/Content/ajaxCart.css"
-        include "https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.ProductRibbons/Styles/Ribbons.common.css"
-        include "https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.ProductRibbons/Themes/Prisma/Content/Ribbons.css"
-        include "https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.QuickView/Themes/Prisma/Content/QuickView.css"
-        include "https://bottleopener.com/lib/fineuploader/fine-uploader.min.css"
-        include "https://bottleopener.com/Themes/Prisma/Content/css/theme.custom-1.css?v=46"
-      %}
-    {% endset %}
-    <style>
-      {{ css | cssmin | safe }}
-    </style>
+          
+      <link rel="stylesheet" href="https://bottleopener.com/Themes/Prisma/Content/CSS/styles.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Themes/Prisma/Content/CSS/mobile.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Themes/Prisma/Content/CSS/480.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Themes/Prisma/Content/CSS/768.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Themes/Prisma/Content/CSS/1024.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Themes/Prisma/Content/CSS/1280.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Plugins/SevenSpikes.Core/Styles/perfect-scrollbar.min.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.RichBlog/Themes/Prisma/Content/RichBlog.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.MegaMenu/Themes/Prisma/Content/MegaMenu.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.AjaxCart/Themes/Prisma/Content/ajaxCart.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.ProductRibbons/Styles/Ribbons.common.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.ProductRibbons/Themes/Prisma/Content/Ribbons.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Plugins/SevenSpikes.Nop.Plugins.QuickView/Themes/Prisma/Content/QuickView.css">
+      <link rel="stylesheet" href="https://bottleopener.com/lib/fineuploader/fine-uploader.min.css">
+      <link rel="stylesheet" href="https://bottleopener.com/Themes/Prisma/Content/css/theme.custom-1.css?v=46">
   </head>
   <body>
     <header>
